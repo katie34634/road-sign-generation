@@ -2,3 +2,5 @@ torchvision
 pillow
 matplotlib
 numpy
+tensorflow-macos
+tensorflow-metal
