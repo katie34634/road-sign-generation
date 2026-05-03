@@ -4,3 +4,4 @@ matplotlib
 numpy
 tensorflow-macos
 tensorflow-metal
+tensorflow_datasets
