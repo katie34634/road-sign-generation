@@ -1,5 +1,5 @@
 import logging
-import train
+import graveyard.train as train
 
 logging.basicConfig(level=logging.INFO)
 
