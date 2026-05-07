@@ -103,7 +103,11 @@ For the first few attempts at training, the generated images were extremely defo
 
 Once I made those changes the model was generating readable signs.
 
-I noticed one sign that was not in the original dataset, which was a blank speed limit sign. I did not recognize any other images that were novel. I thought that if I trained long enough it would start to generate new signs, but the loss didn’t appear to be decreasing any further.
+I noticed one sign that was not in the original dataset, which was a blank speed limit sign. 
+
+![blank speed](figures/blank_speed_limit.png)
+
+I did not recognize any other images that were novel when not doing any interpolation. I thought that if I trained long enough it would start to generate new signs, but the loss didn’t appear to be decreasing any further.
 
 I attempted to do DDIM inversion to get the noise that a real image would have started from, but the loss between the original and reconstructed image was really high so I pursed other types of latent space exploration.
 
@@ -119,11 +123,11 @@ The model successfully generates realistic synthetic road signs after 400 epochs
 ### Extra Criteria
 By interpolating between noise vectors, I was able to generate some images that were clear(ish) and not in the original dataset. To do this, I took two random noise vectors and interpolated between them. Some of the interesting results:
 
-![Interpolation 1](figures/pi_interpolation.png)
+![Interpolation 1](figures/pi_interpolation_annotated.png)
  
 Between blank speed limit (not in dataset) and 80 speed limit, there’s one that kind of looks like 𝛑 speed limit.
 
-![Interpolation 2](figures/backwards20interpolation.png)
+![Interpolation 2](figures/backwards20_interpolation_annotated.png)
 
 Backwards 2 somewhere between 30 speed limit and 70 speed limit.
 
