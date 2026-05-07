@@ -13,7 +13,7 @@ This project implements a diffusion-based generative model to create synthetic t
 **GTSRB (German Traffic Sign Recognition Benchmark)**
 - Contains 43 classes of road signs
 - ~50,000 training images
-- The project uses a filtered subset of 25,000 images with minimum dimension >= 32 pixels
+- The project uses a filtered subset of 22,000 images with minimum dimension >= 32 pixels
 - Images are resized to 64×64 pixels
 
 The dataset is automatically downloaded via torchvision's GTSRB dataset loader.
