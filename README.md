@@ -109,6 +109,8 @@ I noticed one sign that was not in the original dataset, which was a blank speed
 
 I did not recognize any other images that were novel when not doing any interpolation. I thought that if I trained long enough it would start to generate new signs, but the loss didn’t appear to be decreasing any further.
 
+![loss](figures/loss.png)
+
 I attempted to do DDIM inversion to get the noise that a real image would have started from, but the loss between the original and reconstructed image was really high so I pursed other types of latent space exploration.
 
 
